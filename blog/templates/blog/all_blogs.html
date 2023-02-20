@@ -1,0 +1,7 @@
+{% for post in posts %}
+
+<a href="{% url 'blog:detail' post.id %}"><h1>{{ post.title }}</h1></a>
+<p>{{ post.date }}</p>
+<p>{{ post.description }}</p>
+
+{% endfor %}
